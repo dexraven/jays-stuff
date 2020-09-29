@@ -1,0 +1,221 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+
+@ui-size: 1rem;
+@background: @base-background-color;
+@bg2: lighten(@background, 1%);
+@import "ui-variables";
+
+@tts-height: @ui-size * 2.5;
+@panel-bg-color: darken(@background, 1%);
+@tts-panel-width: 315px;
+
+.tabletopsimulator-lua {
+}
+
+.tts-panel-view {
+    background-color: @panel-bg-color;
+    padding-left: 2px;
+    overflow: auto;
+    width: @tts-panel-width;
+}
+
+.tts-panel-view li.tab.active {
+    background-color: @panel-bg-color;
+}
+
+.tts-panel-view .header {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border-top: 1px solid @bg2;
+}
+
+.tts-panel-view table.watch-list div.tab {
+    background-color: @panel-bg-color;
+    border: none;
+}
+
+.tts-panel-view table.watch-list input.input-text {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: @background;
+  border: 1px solid @bg2;
+  margin-top:  2px;
+}
+
+.tts-panel-view .watch-control {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tts-panel-view .watch-control table {
+    width: 100%;
+    height: @ui-size;
+}
+
+.tts-panel-view .watch-control table label {
+    font-weight: normal;
+}
+
+.tts-panel-view .watch-control table input.input-checkbox {
+    margin-top: 0;
+}
+
+.tts-panel-view .watch-control table input {
+}
+
+.tts-panel-view .watch-control table .button-container {
+    text-align: right;
+}
+
+.tts-panel-view .watch-control table .button-container button {
+    margin-right: 0;
+    height: @tts-height;
+    max-height: @tts-height;
+}
+
+.tts-panel-view table.watch-list input.entry {
+}
+
+.tts-panel-view table.watch-list input.value {
+    border-left: none;
+}
+
+.tts-panel-view .watch-list .tab-bar {
+    max-height: @tts-height;
+    height: @tts-height;
+}
+
+.tts-panel-view .watch-list .tab-bar .tab {
+  max-width: 100%;
+  width: 100%;
+  max-height: @tts-height;
+  height: @tts-height;
+  vertical-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tts-panel-view .watch-list .tab-bar .tab .close-icon {
+  //top: (@tts-height / 2) - (@component-icon-size / 32);
+  margin-top: -(@component-icon-size*0.5);
+  top: (@tts-height / 2);
+  left: 4px;
+  right: auto;
+  line-height: @component-icon-size;
+}
+
+.tts-panel-view #throttle {
+    background-color: @panel-bg-color;
+    color: @base-border-color;
+}
+
+.tts-panel-view #throttle-label {
+    border: none;
+    background-color: @panel-bg-color;
+    color: @text-color;
+    text-align: center;
+    width: 4em;
+}
+
+.tts-panel-view .watch-control table tr .throttle-container {
+    width: 4em;
+}
+
+.tts-panel-view .watch-control #watch-table-footer tr td.button-container {
+    width: @tts-height;
+}
+
+.tts-panel-view .watch-control #watch-table-footer tr td.button-container button.btn {
+    width: @tts-height;
+    height: @tts-height;
+    font-weight: bold;
+    font-size: @tts-height * 0.55;
+    text-align: center;
+    vertical-align: middle;
+    transform: rotate(180deg);
+    border: none;
+}
+
+.tts-panel-view .watch-list input.input-text {
+  margin-top: 1px;
+}
+
+.tts-panel-view .watch-list input.input-text.error {
+  color: #ff3333;
+}
+
+.tts-panel-view .snippets .snippet {
+
+}
+
+.tts-panel-view .snippets .snippet-controls {
+    width: 100%;
+    margin-top: @component-icon-size*0.5;
+    margin-bottom: @component-icon-size*0.5;
+}
+
+.tts-panel-view .snippets .snippet-controls .input-label {
+    margin-right: 2px;
+}
+
+.tts-panel-view .snippets .snippet-controls tr td #snippet-label {
+    width: 100%;
+}
+
+.tts-panel-view .snippets .snippet-controls tr td.button-container {
+    width: @tts-height;
+}
+
+.tts-panel-view .snippets .snippet-controls tr td.button-container .btn {
+    width: @tts-height;
+    height: @tts-height;
+    margin: 0;
+}
+
+.tts-panel-view .snippets .snippet-controls tr td.button-container .btn {
+    border: none;
+    width: @tts-height;
+    height: @tts-height;
+}
+
+.tts-panel-view .snippets #snippet-buttons {
+    width: @tts-panel-width;
+}
+
+.tts-panel-view .snippets #snippet-buttons button.btn {
+    display: inline;
+    margin-bottom: @component-icon-size * 0.5;
+    margin-top: @component-icon-size * 0.5;
+    margin-right: @component-icon-size * 0.5;
+}
+
+.modal.overlay.from-top::before {
+  z-index: -1;
+}
+
+status-bar {
+    .status-bar-left .status-bar-function {
+        min-width: 30em;
+    }
+
+    .status-bar-left .status-bar-function-link  {
+        font-size: 1.0rem;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+    }
+
+    .status-bar-left .status-bar-function-spacer {
+        width: 1em;
+        //padding: 0;
+        //padding-left: 0.1em;
+        //padding-right: 0.1em;
+        margin: 0;
+    }
+}
